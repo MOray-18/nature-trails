@@ -44,7 +44,7 @@ h3 {
 
 h1 {
   margin: 2rem auto;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 h3 {
@@ -55,6 +55,15 @@ h4 {
   font-size: 1.8rem;
 }
 
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+}
 /* Header Section */
 header {
   padding: 1rem 0.5rem;
@@ -103,15 +112,20 @@ nav li {
   }
 }
 /* Banner Section */
-.banner {
-  padding-top: 4rem;
-  height: 100vh;
-  background-image: url("../images/banner.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.banner img {
+  max-width: 100%;
+  position: absolute;
+  z-index: -4;
 }
 
 .content {
+  position: relative;
+  top: 5rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .content {
+    top: 2rem;
+  }
 }
