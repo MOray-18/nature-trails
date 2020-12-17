@@ -5,6 +5,30 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
 /* Typography */
 h2 {
   font-size: 2rem;
@@ -47,4 +71,15 @@ nav li {
   margin: 0 0.75rem;
   font-size: 1.2rem;
   display: inline-block;
+}
+
+@media only screen and (max-width: 450px) {
+  header {
+    grid-template-columns: 1fr 40px;
+  }
+
+  header div {
+      justify-self: center;
+      align-self: center;
+  }
 }
