@@ -12,35 +12,58 @@
     />
   </head>
   <body>
-    <header>
-      <h3>Nature<span>Trails</span></h3>
-      <nav class="desktop">
-        <ul>
-          <li>About Us</li>
-          <li>Events</li>
-          <li>Membership</li>
-          <li>Contact Us</li>
-        </ul>
-      </nav>
+    <header class="grid-container top-bar">
+      <div class="logo">
+        <h3>Nature<span>Trails</span></h3>
+      </div>
+
+      <ul class="desktop flex-container">
+        <li>About Us</li>
+        <li>Events</li>
+        <li>Membership</li>
+        <li>Contact Us</li>
+      </ul>
+
       <div class="mobile">
         <i class="fa fa-bars fa-lg"></i>
       </div>
     </header>
-    <section class="banner">
-      <img src="assets/images/banner.jpg" alt="" />
-      <div class="content">
+    <section class="grid-container banner">
+      <div class="image">
+          <img src="assets/images/banner.jpg" alt="" />
+      </div>
+      <div class="content flex-container">
         <h1>Nature Trails</h1>
         <h4>Epic adventures await</h4>
       </div>
     </section>
-    <section class="testimonial">
-      <div class="image">
+    <section class="grid-container gallery">
+      <div id="left" class="photo">
         <img
-          src="assets/images/testimonial.jpg"
+          src="assets/images/gallery-left.jpg"
           alt="man standing on a rock looking towards a lake"
         />
       </div>
-      <article id="one" class="card">
+      <div id="top" class="photo">
+        <img
+          src="assets/images/gallery-middle-top.jpg"
+          alt="man standing on a rock looking towards a lake"
+        />
+      </div>
+      <div id="bottom" class="photo">
+        <img
+          src="assets/images/gallery-middle-bottom.jpg"
+          alt="man standing on a rock looking towards a lake"
+        />
+      </div>
+      <div id="right" class="photo">
+        <img
+          src="assets/images/gallery-right.jpg"
+          alt="man standing on a rock looking towards a lake"
+        />
+      </div>
+    </section>
+      <!-- <article id="one" class="card">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Id diam
@@ -49,14 +72,14 @@
         </p>
         <h6>&ndash; Adam Holt</h6>
       </article>
-      <article id="two" class="card">
+      <article id="two" class="card desktop">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Id diam
           vel quam elementum pulvinar etiam non quam. Tellus integer feugiat
           scelerisque varius morbi enim.
         </p>
-        <h6>&ndash; Adam Holt</h6>
+        <h6>&ndash; James Mclean</h6>
       </article>
       <article id="three" class="card">
         <p>
@@ -65,8 +88,8 @@
           vel quam elementum pulvinar etiam non quam. Tellus integer feugiat
           scelerisque varius morbi enim.
         </p>
-        <h6>&ndash; Adam Holt</h6>
-      </article>
+        <h6>&ndash; Liza Adams</h6>
+      </article> -->
     </section>
   </body>
 </html>
