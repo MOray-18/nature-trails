@@ -320,7 +320,9 @@ h6 {
 /* Footer Section */
 footer {
   padding: 2rem 1rem 1rem 1rem;
-  grid-template-rows: 4rem 2rem;
+  grid-template-rows: 4rem 2rem 2rem;
+  row-gap: 1rem;
+  justify-content: center;
 }
 
 .contact {
@@ -331,14 +333,47 @@ footer {
   align-items: center;
 }
 
+.social {
+  grid-area: 2 / 6 / 3 / 8;
+  justify-content: space-evenly;
+}
+
 .copyright {
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   grid-column: 1 / 7;
   justify-content: flex-start;
 }
 
 .credit {
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   grid-column: 7 / -1;
   justify-content: flex-end;
+}
+
+@media only screen and (max-width: 450px) {
+  footer {
+    grid-template-rows: 4rem 2rem 2rem 2rem;
+  }
+
+  .contact,
+  .copyright,
+  .credit {
+    grid-column: 1 / -1;
+  }
+
+  .social {
+    width: 50%;
+    grid-column: 2 / 4;
+    justify-self: center;
+  }
+
+  .copyright,
+  .credit {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .credit {
+    grid-row: 4 / -1;
+  }
 }
