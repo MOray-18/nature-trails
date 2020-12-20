@@ -13,8 +13,6 @@ html {
 }
 
 .grid-container {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 1rem;
@@ -25,6 +23,14 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+hr {
+  margin: 0 auto;
+  width: 20%;
+  border-width: 0 0 10px 0;
+  border-style: dotted;
+  border-color: grey;
 }
 
 @media only screen and (max-width: 450px) {
@@ -46,7 +52,7 @@ h1 {
 }
 
 h2 {
-  margin: 1rem;
+  margin: 1rem 0 2rem 0;
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -88,7 +94,6 @@ h6 {
   opacity: 0.8;
   color: aliceblue;
   text-transform: uppercase;
-  border-bottom: 1px solid black;
 }
 
 .logo {
@@ -160,8 +165,8 @@ h6 {
 /* Testimonial Section */
 
 .testimonial {
-  padding: 2rem 1rem;
-  grid-template-rows: 3rem repeat(3, 1fr);
+  padding: 3rem 1rem;
+  grid-template-rows: 6rem repeat(3, 1fr);
 }
 
 .card {
@@ -202,8 +207,8 @@ h6 {
 /* Gallery Section */
 
 .gallery {
-  padding: 2rem 1rem;
-  grid-template-rows: 3rem 1fr 1fr;
+  padding: 2rem 1rem 3rem 1rem;
+  grid-template-rows: 6rem 1fr 1fr;
   row-gap: 0.5rem;
   justify-content: center;
   align-items: center;
@@ -265,11 +270,11 @@ h6 {
 
 .join-us {
   padding: 2rem 1rem;
-  grid-template-rows: 3rem 1fr;
+  grid-template-rows: 6rem 1fr;
 }
 
 .events {
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 1rem;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   flex-wrap: wrap;
