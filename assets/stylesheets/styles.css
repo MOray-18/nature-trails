@@ -13,6 +13,8 @@ body {
 }
 
 .grid-container {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 1rem;
@@ -34,6 +36,8 @@ h1 {
 
 h2 {
   font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
   grid-row: 1 / 2;
   grid-column: 1 / -1;
   justify-self: center;
@@ -68,8 +72,6 @@ h6 {
   color: aliceblue;
   text-transform: uppercase;
   border-bottom: 1px solid black;
-  position: fixed;
-  z-index: 10;
 }
 
 .logo {
@@ -95,8 +97,6 @@ h6 {
 .banner {
   margin-bottom: 1rem;
   grid-template-rows: repeat(9, 1fr);
-  position: relative;
-  top: 4rem;
 }
 
 .banner .image {
@@ -122,12 +122,12 @@ h6 {
   margin: 1rem auto;
   padding: 0 1rem;
   grid-template-rows: 3rem repeat(3, 1fr);
-  position: relative;
-  top: 4rem;
 }
 
 .card {
   padding: 0.5rem;
+  background-color: blanchedalmond;
+  border-radius: 10px;
   grid-row: 2 / 5;
   flex-direction: column;
 }
@@ -151,8 +151,7 @@ h6 {
   grid-template-rows: 3rem 1fr 1fr;
   row-gap: 0.5rem;
   padding: 0 1rem;
-  position: relative;
-  top: 4rem;
+
   justify-content: center;
   align-items: center;
 }
@@ -185,4 +184,46 @@ h6 {
 
 .photo img {
   max-width: 100%;
+}
+
+/* Join-Us Section */
+
+.join-us {
+  padding: 2rem 1rem;
+  grid-template-rows: 3rem 1fr;
+}
+
+.events {
+  padding: 2rem 1rem;
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  flex-wrap: wrap;
+}
+
+.events img {
+  max-width: 30%;
+}
+
+.info {
+  height: 10rem;
+  grid-row: 3 / -1;
+  grid-column: 1 / -1;
+  flex-wrap: wrap;
+}
+
+.info p {
+  margin: 2rem auto;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.btn {
+  height: 3rem;
+  width: 8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: bisque;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 25px black;
 }
