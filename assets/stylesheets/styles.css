@@ -97,6 +97,18 @@ h6 {
   display: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+    grid-column: -3 / -1;
+    align-self: center;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
 /* Banner Section */
 
 .banner .image {
