@@ -31,6 +31,10 @@ html {
   html {
     font-size: 12px;
   }
+
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Typography */
