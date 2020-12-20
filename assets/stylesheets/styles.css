@@ -99,10 +99,6 @@ h6 {
 
 /* Banner Section */
 
-.banner {
-  grid-template-rows: repeat(9, 1fr);
-}
-
 .banner .image {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
@@ -113,11 +109,15 @@ h6 {
 }
 
 .content {
-  grid-row: 2 / 4;
+  background-color: black;
+  opacity: 0.7;
+  color: aliceblue;
+  grid-row: 1 / -1;
   grid-column: 4 / span 6;
   text-align: center;
   text-transform: uppercase;
   flex-direction: column;
+  align-self: center;
 }
 
 /* Testimonial Section */
