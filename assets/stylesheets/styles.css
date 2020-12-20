@@ -42,6 +42,7 @@ h1 {
 }
 
 h2 {
+  margin: 1rem;
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -148,7 +149,7 @@ h6 {
 }
 
 .card {
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: blanchedalmond;
   border-radius: 10px;
   grid-row: 2 / 5;
@@ -165,6 +166,21 @@ h6 {
 
 #two {
   grid-column: 7 / span 6;
+}
+
+@media only screen and (max-width: 450px) {
+  .testimonial {
+    grid-template-rows: 3rem 1fr 1fr;
+    row-gap: 1rem;
+  }
+
+  #one {
+    grid-area: 2 / 1 / 3 / -1;
+  }
+
+  #two {
+    grid-area: 3 / 1 / -1 / -1;
+  }
 }
 
 /* Gallery Section */
