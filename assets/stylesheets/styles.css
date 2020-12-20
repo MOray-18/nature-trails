@@ -121,6 +121,12 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .mobile {
+    grid-column: -2 / -1;
+  }
+}
+
 /* Banner Section */
 
 .banner .image {
@@ -143,6 +149,12 @@ h6 {
   text-transform: uppercase;
   flex-direction: column;
   align-self: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .content {
+    grid-area: 1 / 2 / -1 / -2;
+  }
 }
 
 /* Testimonial Section */
